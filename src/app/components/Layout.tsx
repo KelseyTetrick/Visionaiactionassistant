@@ -31,6 +31,7 @@ const conceptItems = [
   { label: "Bottom Sheet Preview", path: "/concepts/mobile-bottom-sheet", icon: Smartphone, group: "Mobile" },
   { label: "Quick Capture", path: "/concepts/mobile-quick-capture", icon: Smartphone, group: "Mobile" },
   { label: "Review & Apply", path: "/concepts/mobile-review-apply", icon: Smartphone, group: "Mobile" },
+  { label: "Record Update", path: "/concepts/mobile-constituent-record-update", icon: Smartphone, group: "Mobile" },
   { label: "Record Update", path: "/concepts/constituent-record-update", icon: UserCog, group: "Desktop" },
 ];
 

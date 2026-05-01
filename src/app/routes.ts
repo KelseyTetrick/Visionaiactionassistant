@@ -11,25 +11,30 @@ import DesktopReviewApply from "./components/concepts/DesktopReviewApply";
 import MobileBottomSheet from "./components/concepts/MobileBottomSheet";
 import MobileQuickCapture from "./components/concepts/MobileQuickCapture";
 import MobileReviewApply from "./components/concepts/MobileReviewApply";
+import MobileConstituentRecordUpdate from "./components/concepts/MobileConstituentRecordUpdate";
 import ConstituentRecordUpdate from "./components/concepts/ConstituentRecordUpdate";
 
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: Layout,
-    children: [
-      { index: true, Component: Overview },
-      { path: "design-principles", Component: DesignPrinciples },
-      { path: "patterns", Component: PatternsAndBehaviors },
-      { path: "control-exit", Component: ControlAndExit },
-      { path: "anti-patterns", Component: AntiPatterns },
-      { path: "concepts/desktop-post-action", Component: DesktopPostAction },
-      { path: "concepts/desktop-quick-capture", Component: DesktopQuickCapture },
-      { path: "concepts/desktop-review-apply", Component: DesktopReviewApply },
-      { path: "concepts/mobile-bottom-sheet", Component: MobileBottomSheet },
-      { path: "concepts/mobile-quick-capture", Component: MobileQuickCapture },
-      { path: "concepts/mobile-review-apply", Component: MobileReviewApply },
-      { path: "concepts/constituent-record-update", Component: ConstituentRecordUpdate },
-    ],
-  },
-]);
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: Layout,
+      children: [
+        { index: true, Component: Overview },
+        { path: "design-principles", Component: DesignPrinciples },
+        { path: "patterns", Component: PatternsAndBehaviors },
+        { path: "control-exit", Component: ControlAndExit },
+        { path: "anti-patterns", Component: AntiPatterns },
+        { path: "concepts/desktop-post-action", Component: DesktopPostAction },
+        { path: "concepts/desktop-quick-capture", Component: DesktopQuickCapture },
+        { path: "concepts/desktop-review-apply", Component: DesktopReviewApply },
+        { path: "concepts/mobile-bottom-sheet", Component: MobileBottomSheet },
+        { path: "concepts/mobile-quick-capture", Component: MobileQuickCapture },
+        { path: "concepts/mobile-review-apply", Component: MobileReviewApply },
+        { path: "concepts/mobile-constituent-record-update", Component: MobileConstituentRecordUpdate },
+        { path: "concepts/constituent-record-update", Component: ConstituentRecordUpdate },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
